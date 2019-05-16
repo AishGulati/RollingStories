@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rolling Stories</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-=edge">
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/popup.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<style type="text/css">
+
+	
+	.slide {
+	    float: left;
+	    list-style-type: none;
+	   
+	}
+
+	</style>
+
+	
+</head>
+<body>
+
+	<div class="header col-lg-12 col-md-12">
+		<div class="row">
+		<div class="col-lg-1 col-md-1"></div>
+		<div class="textoftop col-lg-1 col-md-2" id="textfile" style="margin-left: -8%">File</div>
+		<div class="col-lg-1 col-md-2"><img id="arrowicon" src="../images/Icons/undo-redo.png"></div>
+	    <div class="textoftop col-lg-6 col-md-3" style="margin-left: 2%;">Untitled-story</div>
+		<div class="col-lg-3 col-md-4" style="margin-top: 11px">
+
+			<input class="iconleft" id="myAddBtn" type="image"  id="share" style="margin-right: 5%; margin-left: 45%;" src="../images/Icons/Add.png"  />
+			<input class="iconleft" id="myShareBtn" type="image"  id="share" src="../images/Icons/share.png"  />
+			
+			
+			<input class="iconleft" id="myProfileBtn" type="image"  src="../images/Icons/profile.png"  />
+			<span class="textoftop" style="margin-top: -14%; display: grid; margin-left: 98%;">Profile</span>
+			
+			
+		</div>
+
+		</div>
+
+
+
+
+
+
+	</div>
+	<div class="row">
+		<div class="menu col-lg-2 col-md-4">
+			<div class="button col-lg-12 col-md-12">
+			<input class="menubutton" id="myBtn" type="image"  id="upload" src="../images/Icons/upload.png"  />
+			<span class="buttontext">Upload</span> 
+			</div>
+
+			<div class="button col-lg-12 col-md-12">
+			<img class="menubutton" src="../images/Icons/Scenery.png">
+			<span class="buttontext">Scenery</span>
+			</div>
+
+			<div class="button col-lg-12 col-md-12">
+			<img class="menubutton" src="../images/Icons/Character.png">
+			<span class="buttontext" style="margin-left: 9px;">Characters</span>
+			</div>
+
+			<div class="button col-lg-12 col-md-12">
+			<img class="menubutton" src="../images/Icons/object.png">
+			<span class="buttontext">Objects</span> 
+			</div>
+
+			<div class="button col-lg-12 col-md-12">
+			<input class="menubutton" id="audiobtn" type="image" src="../images/Icons/audio.png" />
+			<span class="buttontext">Audio</span> 
+			</div>
+
+			<div class="button col-lg-12 col-md-12">
+			
+			<img class="menubutton" src="../images/Icons/Dots.png">
+			</div>
+		</div>
+		<div class="col-lg-10 col-md-8" style="background-color: #eceaea; height: 712px;">
+			<div class="playmenu col-lg-12 col-md-12">
+				<div class="iconplaymenuright col-lg-4 col-md-5">
+					
+					<input class="iconleft" id="mychartBtn" type="image"  id="chart" src="../images/Newicons/align.jpg"  />
+					<input class="iconleft" id="mynexfileBtn" type="image"  id="chart" src="../images/Newicons/newfile.jpg"  />
+					<input class="iconleft" id="mytextBtn" type="image"  id="chart" src="../images/Newicons/text.jpg"  />
+													
+					
+
+				</div>
+				<div class="iconplaymenucenter col-lg-2 col-md-5">					
+
+					<input class="iconleft" style="margin-top: 13px;" id="mybackBtn" type="image"  id="chart" src="../images/Newicons/back.jpg"  />
+					<input class="iconleft" style="height: 50px;" id="myplaytBtn" type="image"  id="chart" src="../images/Newicons/play.jpg"  />
+					<input class="iconleft" style="margin-top: 15px;" id="mystopBtn" type="image"  id="chart" src="../images/Newicons/pause.png"  />
+					<input class="iconleft" style="margin-top: 15px;" id="myforwardBtn" type="image"  id="chart" src="../images/Newicons/forward.jpg"  />
+								
+
+				</div>
+				<div class="iconplaymenuleft col-lg-6 col-md-12">					
+
+					<input class="iconleft" id="myCopyBtn" type="image"  id="upload" src="../images/Newicons/copy.jpg"  />		
+					<input class="iconleft" id="myCropBtn" type="image"  id="upload" src="../images/Newicons/crop.jpg"  />
+					<input class="iconleft" id="myExtandBtn" type="image"  id="upload" src="../images/Newicons/extand.jpg"  />
+					<input class="iconleft" id="myRotateBtn" type="image"  id="upload" src="../images/Newicons/rotate.jpg"  />
+					<input class="iconleft" id="myflipBtn" type="image"  id="upload" src="../images/Newicons/flip.jpg"  />
+					<input class="iconleft" id="myLockBtn" type="image"  id="upload" src="../images/Newicons/lock.jpg"  />
+					<input class="iconleft" id="myDeleteBtn" type="image"  id="upload" src="../images/Newicons/delete.jpg"  />
+					
+
+				</div>
+
+
+
+
+
+			</div>
+			<div class="rollingg col-lg-12 col-md-12" id="list">
+				
+				<p id="some-element">
+			
+				<img class="Img slide" id="flipimage" src="" width="20%">
+
+				</p>
+
+
+
+			</div>
+			<div class="footer col-lg-12 col-md-12">
+				
+				<div class="textbottom">Terms</div>
+				<div class="textbottom">Privacy Policy</div>
+				<div class="textbottom">Cookies</div>
+				<div class="textbottom">2019 Rolling-stories, Inc</div>
+				<div class="textbottom">English</div>
+				<div style="display: inline-table;"><img style="height: 65px; padding: 15px" src="../images/Icons/Expand.png"></div>
+
+			</div>
+
+
+
+
+		</div>
+
+
+
+	</div>
+
+		<div id="myModal" class="modal">
+
+		  <!-- Modal content -->
+		  <div class="modal-content">
+
+			    <div class="modal-header">
+			      <span class="close">&times;</span>
+			     
+			    </div>
+
+			    <div class="modal-body">
+				      <div>
+				      	<img class="iconupload" src="../images/Icons/download.png">
+
+				      </div>
+				      
+				      <div class="form">
+
+				      <label><input class="shareinput" type="text" id="down" name="download" placeholder="Rename your file..."></label>
+
+				      </div>
+				      <div class="from">
+
+				   
+				      	<input class="from" type="file" value="Upload">
+
+				      </div>
+			    </div>
+
+			    <!---<div class="modal-footer">
+			      <h3>Modal Footer</h3>
+			    </div> ---->
+
+		  </div>
+
+	</div>
+
+	<div id="myShareModal" class="modal">
+
+		  <!-- Modal content -->
+		  <div class="modal-content">
+
+			    <div class="modal-header">
+			      <span class="closeShare">&times;</span>
+			     
+			    </div>
+
+			    <div class="modal-body">
+				      <div>
+				      	<img class="iconShare" class="facebook-share" data-js="facebook-share" style="margin-left: 190px;" src="../images/Icons/facebook.png">
+				      	<img class="iconShare" class="twitter-share" data-js="twitter-share" src="../images/Icons/twitter.png">
+				      	<img class="iconShare" class="linkedin-share" data-js="linkedin-share" src="../images/Icons/linkedin.png">
+				      </div>
+				      
+				      <div class="form">
+
+				      <label><input class="shareinput" type="text" id="down" name="download" placeholder="Share your file..."></label>
+
+				      </div>
+				      <!--- <div class="from">
+
+				      	<input type="submit" value="Copy Link">
+
+				      </div> -->
+			    </div>
+
+			    <!---<div class="modal-footer">
+			      <h3>Modal Footer</h3>
+			    </div> ---->
+
+		  </div>
+
+
+
+	</div>
+	
+	<div id="myAudioModal" class ="modal">
+		
+		<!-- Modal content -->
+			<div class="modal-content">
+
+			    <div class="modal-header">
+			      <span class="closeAudio" style="margin-left: 96%;">&times;</span>
+			     
+			    </div>
+			 <div class="modal-body">
+				<h1>Audio Recording </h1>
+				<p>Talk for 3 seconds, then you will hear your recording played back</p>
+				<script src="../js/index.js"></script>
+				<button id="action" onclick="handleAction()">Start recording...</button>
+			</div>
+		</div>
+	
+	</div>
+
+	<div id="myProfileModal" class="modal">
+
+		  <!-- Modal content -->
+		  <div class="modal-content">
+
+			    <div class="modal-header">
+			      <span class="closeProfile" style="margin-left: 96%;">&times;</span>
+			     
+			    </div>
+
+			    <div class="modal-body">
+				      <div>
+				      	<h1 style="color: #243d61; text-align: center;}">My Profile</h1>
+				      	<span class="namep">E-mail:</span><span class="profilename"> betulsunter@gmail.com</span><br/>
+				      	<span class="namep">Name: </span><span class="profilename">Betül Sünter</span> 
+				      </div>
+				      
+				      
+				      <div class="from">
+
+				      	<a href="Login.html"><input type="submit" value="Log Out"></a>
+
+				      </div> 
+			    </div>
+
+			    <!---<div class="modal-footer">
+			      <h3>Modal Footer</h3>
+			    </div> ---->
+
+		  </div>
+
+
+
+	</div>
+
+
+	<script>
+	// Get the modal
+	var modalshare = document.getElementById('myShareModal');
+
+	// Get the button that opens the modal
+	var btnshare = document.getElementById("myShareBtn");
+
+	// Get the <span> element that closes the modal
+	var spanShare = document.getElementsByClassName("closeShare")[0];
+
+	// When the user clicks the button, open the modal 
+	btnshare.onclick = function() {
+	  modalshare.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	spanShare.onclick = function() {
+	  modalshare.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	  if (event.target == modalshare) {
+	    modalshare.style.display = "none";
+	  }
+	}
+	</script>
+
+	<script>
+	// Get the modal
+	var modalprofile = document.getElementById('myProfileModal');
+
+	// Get the button that opens the modal
+	var btnprofile = document.getElementById("myProfileBtn");
+
+	// Get the <span> element that closes the modal
+	var spanprofile = document.getElementsByClassName("closeProfile")[0];
+
+	// When the user clicks the button, open the modal 
+	btnprofile.onclick = function() {
+	  modalprofile.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	spanprofile.onclick = function() {
+	  modalprofile.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	  if (event.target == modalprofile) {
+	    modalprofile.style.display = "none";
+	  }
+	}
+	</script>
+
+	<script>
+	// Get the modal
+	var modal = document.getElementById('myModal');
+
+	// Get the button that opens the modal
+	var btn = document.getElementById("myBtn");
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks the button, open the modal 
+	btn.onclick = function() {
+	  modal.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+	    modal.style.display = "none";
+	  }
+	}
+	</script>
+	
+	
+	<script>
+	// Get the modal
+	var modalAudio = document.getElementById('myAudioModal');
+
+	// Get the button that opens the modal
+	var btnAudio = document.getElementById("audiobtn");
+
+	// Get the <span> element that closes the modal
+	var spanAudio = document.getElementsByClassName("closeAudio")[0];
+
+	// When the user clicks the button, open the modal 
+	btnAudio.onclick = function() {
+	  modalAudio.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	spanAudio.onclick = function() {
+	  modalAudio.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	  if (event.target == modalAudio) {
+	    modalAudio.style.display = "none";
+	  }
+	}
+	</script>
+
+
+
+
+	<script>
+		
+		var twitterShare = document.querySelector('[data-js="twitter-share"]');
+
+		twitterShare.onclick = function(e) {
+		  e.preventDefault();
+		  var twitterWindow = window.open('https://twitter.com/share?url=' + 'https://rollingstories.com/index.php/english/', 'twitter-popup', 'height=350,width=600');
+		  if(twitterWindow.focus) 
+		  	{ twitterWindow.focus(); }
+		    return false;
+		  }
+
+		  var facebookShare = document.querySelector('[data-js="facebook-share"]');
+
+		facebookShare.onclick = function(e) {
+		  e.preventDefault();
+		  var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + 'https://rollingstories.com/index.php/english/', 'facebook-popup', 'height=350,width=600');
+		  if(facebookWindow.focus) { facebookWindow.focus(); }
+		    return false;
+		}
+
+		var linkedinShare = document.querySelector('[data-js="linkedin-share"]');
+
+		linkedinShare.onclick = function(e) {
+		  e.preventDefault();
+		  var linkedinWindow = window.open('https://www.linkedin.com/share?u=' + 'https://rollingstories.com/index.php/english/', 'linkedin-popup', 'height=350,width=600');
+		  if(linkedinWindow.focus) { linkedinWindow.focus(); }
+		    return false;
+		}
+
+
+	</script>
+
+		<script>
+	   		
+	   		window.addEventListener('load', function() {
+	  
+	  		document.querySelector('input[type="file"]').addEventListener('change', function() {
+	      
+	      if (this.files && this.files[0]) {
+
+	          var img = document.querySelector('.Img');  // $('img')[0]
+	          img.src = URL.createObjectURL(this.files[0]); // set src to file url
+	          img.onload = imageIsLoaded; // optional onload event listener
+	      }
+	  });
+	});
+
+
+	  </script>
+
+		  <script>
+		
+			
+			// Get the button that opens the modal
+			var btnCopy = document.getElementById("myCopyBtn");
+
+			// When the user clicks the button, open the modal 
+			btnCopy.onclick = function cloneItem(){
+			  	 var item = document.getElementById('flipimage');
+			     var list = document.getElementById("list");
+			     var clonedItem = item.cloneNode(true);
+			     list.appendChild(clonedItem);
+			}
+
+
+			for(var i = 0; i < 1; i++) {
+			   cloneItem();
+			 }
+
+		
+		</script>
+
+		<script>
+	
+			var modalimagetwo = document.getElementById('flipimage');
+
+			
+			// Get the button that opens the modal
+			var btnExtand = document.getElementById("myExtandBtn");
+
+			// When the user clicks the button, open the modal 
+			btnExtand.onclick = function() {
+			  modalimagetwo.style.width = "40%";
+			}
+
+	
+		</script>
+
+		<script>
+	
+			var id = 'flipimage';
+			var changeone = 0;
+			var deg1 = 90;
+			var deg2 = 180;
+			var deg3 = 270;
+			var deg4 = 360;			
+			// Get the button that opens the modal
+			var rotatebtn = document.getElementById("myRotateBtn");
+			
+			rotatebtn.onclick = function () {
+			  change++;
+			  if (change == 2) {
+			  	document.getElementById(id).style = 'transform: rotate(' + deg1 + 'deg)';
+
+			  }
+			   if (change == 3) {
+			  	document.getElementById(id).style = 'transform: rotate(' + deg2 + 'deg)';
+			  	
+			  }
+			   if (change == 4) {
+			  	document.getElementById(id).style = 'transform: rotate(' + deg3 + 'deg)';
+			  	
+			  }
+			   if (change == 5) {
+			  	document.getElementById(id).style = 'transform: rotate(' + deg4 + 'deg)';
+			  	change == 0;
+			  }
+			  
+			} 
+
+
+
+
+
+		</script>
+
+		<script>
+	
+			var modalimagefour = document.getElementById('flipimage');
+			var change = 1;
+			
+			// Get the button that opens the modal
+			var btnflip = document.getElementById("myflipBtn");
+
+			
+			// When the user clicks the button, open the modal 
+			btnflip.onclick = function flipItem() {
+			 
+			  
+			 change++;
+			  if (change % 2 == 0) {
+			  	modalimagefour.style.transform = "scaleX(-1)";
+			  }
+			  
+			 else {
+				modalimagefour.style.transform = "scaleX(1)";
+
+			}
+
+			}
+
+			for(var i = 0; i < 1; i++) {
+
+
+			   flipItem();
+
+			 }
+
+		</script>
+
+		<script>
+	
+		var modalimagefive = document.getElementById('flipimage');
+		var remove = document.getElementById('list');
+		
+		// Get the button that opens the modal
+		var btnDelete = document.getElementById("myDeleteBtn");
+
+		// When the user clicks the button, open the modal 
+		btnDelete.onclick = function () {		 
+			
+		   remove.removeChild(remove.childNodes[1]);
+
+		}
+	
+	
+		</script>
+
+		<script type="text/javascript">
+	
+		'use strict';
+
+	$(function() {
+
+	    //settings for slider
+	    var modalimageseven = document.getElementById('flipimage');
+	    var width = 1000;
+	    var animationSpeed = 1000;
+	    var pause = 3000;
+	 
+
+	    //cache DOM elements
+	    
+	    var $slideContainer = $('.slide');
+	    
+
+	    var interval;
+
+	    function startSlider() {
+	        interval = setInterval(function() {
+	            $slideContainer.animate({'margin-left': '+='+width}, animationSpeed,);
+	        }, pause);
+	    }
+	    function pauseSlider() {
+	        clearInterval(interval);
+	    }
+
+	   
+
+	    var playbtn = document.getElementById("myplaytBtn");
+
+	    // When the user clicks the button, open the modal 
+	    playbtn.onclick = function() {
+	       startSlider();
+
+	    }
+
+	     var stopbtn = document.getElementById("mystopBtn");
+
+	    // When the user clicks the button, open the modal 
+	    stopbtn.onclick = function() {
+	       pauseSlider();
+	    }
+
+	});
+
+
+	</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+
+</body>
+</html>

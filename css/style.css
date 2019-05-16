@@ -1,0 +1,214 @@
+.header {
+	height: 68px;
+	width: 100%;
+	background-color: #4f6fff;
+}
+
+.textoftop {
+
+	margin-top: 18px;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+  
+}
+
+#arrowicon {
+
+	height: 60px;
+    
+}
+
+.iconleft {
+
+	margin: 8px;
+	height: 40px;
+}
+
+.icon {
+
+	margin: 8px;
+	height: 35px;
+
+}
+
+.menu {
+
+	height: 100%;
+	background-color: black;
+	
+}
+
+.button {
+	height: 70px;
+    margin-left: 10%;
+    margin-right: auto;
+    margin-bottom: 15%;
+    margin-top: 10%;
+}
+
+.menubutton {
+
+	display: -webkit-box;
+    height: 55px;
+    margin-left: 20px
+
+}
+
+.buttontext{
+
+	color: white;
+    font-size: 16px;
+    margin-left: 18px;
+    margin-right: 22px;
+}
+
+.playmenu {
+	
+	margin-top: 10px;
+    height: 11%;
+    background-color: white;
+}
+
+.iconplaymenuright {
+
+   display: inline-table;
+
+}
+
+.iconplaymenucenter{
+
+	padding-top: 1%;
+    display: inline-flex;
+
+}
+
+.iconplaymenuleft {
+
+	margin-left: 11%;
+    display: initial;
+
+}
+
+.rollingg {
+
+	background-color: white;
+    margin-top: 10px;
+    height: 490px;
+}
+
+.footer {
+	
+	
+	height: 75px;
+   
+}
+
+.textbottom {
+
+	color: gray;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-table;
+    margin: 1% 4% 1% 4%;
+}
+
+#flipimage.rotate90 {
+	transform-origin: top left;
+  /* IE 10+, Firefox, etc. */
+  -webkit-transform-origin: top left;
+  /* Chrome */
+  -ms-transform-origin: top left;
+  /* IE 9 */
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+}
+#flipimage.rotate180 {
+	transform-origin: top left;
+  /* IE 10+, Firefox, etc. */
+  -webkit-transform-origin: top left;
+  /* Chrome */
+  -ms-transform-origin: top left;
+  /* IE 9 */
+  transform: rotate(180deg) translate(-100%, -100%);
+  -webkit-transform: rotate(180deg) translate(-100%, -100%);
+  -ms-transform: rotate(180deg) translateX(-100%, -100%);
+}
+#flipimage.rotate270 {
+	transform-origin: top left;
+  /* IE 10+, Firefox, etc. */
+  -webkit-transform-origin: top left;
+  /* Chrome */
+  -ms-transform-origin: top left;
+  /* IE 9 */
+  transform: rotate(270deg) translateX(-100%);
+  -webkit-transform: rotate(270deg) translateX(-100%);
+  -ms-transform: rotate(270deg) translateX(-100%);
+}
+
+.shareinput {
+
+  margin-top: 57px !important;
+  margin-left: 25% !important;
+  width: 175% !important;
+
+}
+   
+.iconShare {
+
+  margin: 8px;
+    height: 48px;
+    margin-top: 23px;
+    margin right: 8px;
+    cursor: pointer;
+
+}
+
+.namep {
+
+    color: #591919;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 29%;
+    /* margin-top: 10px; */
+    margin-bottom: 15px;
+
+}
+
+.profilename {
+
+      font-size: 17px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen (max-width: 992px;) {
+
+	.playmenu {
+    
+    height: 140px;
+ }
+
+}
+
+@media only screen (max-width: 1410px;) {
+
+	.playmenu {
+    
+    height: 140px;
+ }
+
+}
+

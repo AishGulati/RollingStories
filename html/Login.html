@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+.header {
+	text-align: center;
+	background: #4d79ff;
+	color: white;
+	padding: 2px;
+	width: 100%;
+}
+.box {
+	margin: 5px;
+	width: 35%;
+	background-color: white;
+	padding:10px;
+	border: 0.5px solid gray;
+	margin-top: 1%;
+    margin-left: 33%;
+	border-radius: 25px;
+}
+.img {
+	margin-left:21%;
+}
+
+.sign {
+	margin-left: 28%;
+    font-weight: bold;
+    font-size: large;
+    font-family: Helvetica;
+}
+
+.loginbtn {
+	width: 25%;
+    height: 35px;
+    border-radius: 5px;
+	background-color: #4d79ff;
+	color: white;
+	margin-bottom: 5%;
+	margin-top: 5%;
+	font-size: unset;
+}
+
+input[type=email], input[type=password] {
+	width: 50%;
+    padding: 15px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #e6e6e6;
+}
+ 
+.signin {
+	
+	width: 100%;
+	text-align: center;
+	
+}
+
+</style>
+</head>
+<body>
+	<div class="header">
+		<h2>Login Form </h2>
+	</div>
+	<div class="box">
+		<img src="../images/rolling-stories.png" alt="RollingStories" height="100" class="img"/>
+		<p class="sign"> Log in to your account </p>
+		<form align="center">
+			<input type="email" placeholder="Enter Email" name="email" class="itype" required><br>
+			<input type="password" placeholder="Enter Password" name="pword" class="itype" required><br>
+			<button type="submit" formaction="../html/home.html" class="loginbtn">Login</button><br>
+		</form>
+		<div align="center">
+			<label>
+				<input type="checkbox"  name="remember" style="margin-bottom:15px"> Remember me .
+			</label>
+			<span class="psw"> <a href="#">Forgot password?</a></span>
+		</div>
+		<div class="signin">
+			<p>Don't have an account? <a href="../html/Registration.html">Sign Up</a>.</p>
+		</div>
+	</div>
+	
+
+</body>
+</html>

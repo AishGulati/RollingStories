@@ -1,0 +1,159 @@
+body {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+.top {
+	
+	width: 100%;
+	height: 75px;
+	background-color: #4f6fff;
+}
+
+
+.profile {
+
+	margin: 15px;
+	width: 10%;
+	position: fixed;
+}
+
+.textoftop {
+
+	color: white;
+	font-size: 18px;
+    position: fixed;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-top: 8px;
+}
+
+#textfile {
+
+	width: 10%;
+    margin-left: 13%;
+    margin-top: 22px;
+
+}
+
+#arrowicon {
+
+	height: 60px;
+    margin-bottom: 30px;
+    margin-top: -8px;
+    margin-left: 150%;
+
+}
+
+
+
+#iconimages {
+
+	width: 25%;
+    margin-left: 84%;
+    position: fixed;
+}
+
+.icon {
+
+	margin: 8px;
+	height: 35px;
+
+}
+
+.iconleft {
+
+	height: 40px;
+    margin-bottom: 15px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+
+
+.body {
+	width: 100%;
+	height: 675px;
+	background-color: #E5EAEB;
+	
+}
+
+
+
+.menu {
+
+	height: 675px;
+	background-color: black;
+	width: 9%;
+	position: fixed;
+}
+
+#content {
+	
+	width: : 90%;
+	
+}
+
+#playmenu {
+
+	margin-left: 10%;
+    height: 70px;
+    background-color: white;
+}
+
+
+.menubutton {
+
+	margin-right: 22px;
+    height: 40px;
+    margin-left: 20px;
+    margin-bottom: 4px;
+
+}
+
+.button {
+	height: 75px;
+    margin-left: 20px;
+	margin-right: 20px;
+    margin-bottom: 34px;
+    margin-top: 32px;
+}
+
+.buttontext{
+
+	color: white;
+    font-size: 16px;
+    margin-left: 18px;
+    margin-right: 22px;
+}
+
+
+#rollingg {
+
+	    margin-left: 10%;
+    background-color: white;
+    margin-top: 15px;
+    height: 500px;
+}
+
+#bottom {
+
+	
+	background-color: #e5eaeb;
+	margin-left: 10%;
+	height: 25px;
+	position: fixed;
+	width: 90%;
+   
+}
+
+#iconplaymenu {
+
+
+    width: 20%;
+    margin-left: 1%;
+    padding-top: 15px;
+
+}
